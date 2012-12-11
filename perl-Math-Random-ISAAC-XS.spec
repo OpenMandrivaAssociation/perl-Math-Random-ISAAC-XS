@@ -47,3 +47,14 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.1.0-2
++ Revision: 768358
+- svn commit -m mass rebuild of perl extension against perl 5.14.2
+
+* Fri Jan 28 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.1.0-1
++ Revision: 633535
+- import perl-Math-Random-ISAAC-XS
+
