@@ -1,15 +1,15 @@
 %define upstream_name    Math-Random-ISAAC-XS
-%define upstream_version 1.001
+%define upstream_version 1.004
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Version:    %perl_convert_version 1.004
+Release:	1
 
 Summary:    C implementation of the ISAAC PRNG Algorithm
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Math/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Math/Math-Random-ISAAC-XS-1.004.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(ExtUtils::ParseXS)
@@ -57,4 +57,5 @@ rm -rf %buildroot
 * Fri Jan 28 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.1.0-1
 + Revision: 633535
 - import perl-Math-Random-ISAAC-XS
+
 
