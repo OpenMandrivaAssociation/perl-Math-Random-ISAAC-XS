@@ -2,14 +2,14 @@
 %define upstream_version 1.004
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.004
+Version:    %perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:    C implementation of the ISAAC PRNG Algorithm
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Math/Math-Random-ISAAC-XS-1.004.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Math/Math-Random-ISAAC-XS-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
 BuildRequires: perl(ExtUtils::ParseXS)
