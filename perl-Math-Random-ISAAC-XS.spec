@@ -17,7 +17,6 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::NoWarnings)
 BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 See the Math::Random::ISAAC manpage for the full description.
@@ -34,14 +33,11 @@ See the Math::Random::ISAAC manpage for the full description.
 %make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes LICENSE META.yml README
 %{_mandir}/man3/*
 %perl_vendorlib/*
