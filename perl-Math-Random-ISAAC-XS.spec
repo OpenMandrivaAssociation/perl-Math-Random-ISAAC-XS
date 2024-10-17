@@ -8,7 +8,7 @@ Release:	3
 Summary:    C implementation of the ISAAC PRNG Algorithm
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Math/Math-Random-ISAAC-XS-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::CBuilder)
